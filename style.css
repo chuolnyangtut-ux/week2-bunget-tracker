@@ -1,0 +1,120 @@
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.main-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+/* Form Styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Button Cursor on Hover */
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Table Styling */
+.expense-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.expense-table th {
+  background-color: #007bff;
+  color: white;
+  text-align: left;
+}
+
+/* Table Cell Padding */
+.expense-table th, .expense-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+/* Table Row Hover State */
+.expense-table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+/* ===================================================
+   ADVANCED CSS SELECTORS (Required in Rubric)
+   =================================================== */
+
+/* 1. Descendant Selector */
+.expenses-section td {
+  font-size: 0.95rem;
+}
+
+/* 2. Direct Child Selector */
+.add-expense-section > h2 {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+/* 3. Pseudo-class based on position (Alternating Row Backgrounds) */
+.expense-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+/* 4. Focus State */
+input:focus, select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* 5. Negation Pseudo-class */
+input:not([type="submit"]) {
+  background-color: #fafafa;
+}
